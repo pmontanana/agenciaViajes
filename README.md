@@ -1,7 +1,3 @@
-Aquí tienes un borrador del archivo README para tu proyecto:
-
----
-
 # Agencia de Viajes
 
 Agencia de Viajes es una aplicación web para gestionar reservas de viajes y servicios relacionados.
@@ -62,6 +58,3 @@ npm run dev
 ```
 
 Abre tu navegador y navega a `http://localhost:3000` para ver la aplicación.
-
-
-
