@@ -1,27 +1,27 @@
-Based on the project files and dependencies, here is a draft README for the project:
+Aquí tienes un borrador del archivo README para tu proyecto:
 
 ---
 
 # Agencia de Viajes
 
-Agencia de Viajes is a web application for managing travel bookings and related services.
+Agencia de Viajes es una aplicación web para gestionar reservas de viajes y servicios relacionados.
 
-## Project Structure
+## Estructura del Proyecto
 
-- `.env.example`: Sample environment configuration file.
-- `.gitignore`: Specifies files to be ignored by Git.
-- `.idea/`: Directory for IntelliJ IDEA project settings.
-- `config/`: Configuration files.
-- `controllers/`: Application controllers.
-- `index.js`: Main entry point of the application.
-- `models/`: Database models.
-- `package-lock.json`: Lockfile for npm dependencies.
-- `package.json`: Project metadata and dependencies.
-- `public/`: Publicly accessible files.
-- `routers/`: Application routers.
-- `views/`: View templates.
+- `.env.example`: Archivo de configuración de entorno de ejemplo.
+- `.gitignore`: Especifica los archivos que deben ser ignorados por Git.
+- `.idea/`: Directorio para configuraciones del proyecto de IntelliJ IDEA.
+- `config/`: Archivos de configuración.
+- `controllers/`: Controladores de la aplicación.
+- `index.js`: Punto de entrada principal de la aplicación.
+- `models/`: Modelos de la base de datos.
+- `package-lock.json`: Archivo de bloqueo de dependencias de npm.
+- `package.json`: Metadatos del proyecto y dependencias.
+- `public/`: Archivos accesibles públicamente.
+- `routers/`: Enrutadores de la aplicación.
+- `views/`: Plantillas de vistas.
 
-## Dependencies
+## Dependencias
 
 - `dotenv`: ^16.4.7
 - `express`: ^4.21.2
@@ -30,39 +30,38 @@ Agencia de Viajes is a web application for managing travel bookings and related 
 - `pug`: ^3.0.3
 - `sequelize`: ^6.37.5
 
-## Dev Dependencies
+## Dependencias de Desarrollo
 
 - `nodemon`: ^3.1.9
 
-## Setup Instructions
+## Instrucciones de Configuración
 
-1. Clone the repository:
+1. Clona el repositorio:
    ```sh
    git clone https://github.com/pmontanana/agenciaViajes.git
    ```
-2. Navigate to the project directory:
+2. Navega al directorio del proyecto:
    ```sh
    cd agenciaViajes
    ```
-3. Install dependencies:
+3. Instala las dependencias:
    ```sh
    npm install
    ```
-4. Create a `.env` file based on the `.env.example` file and configure the necessary environment variables.
-5. Start the development server:
+4. Crea un archivo `.env` basado en el archivo `.env.example` y configura las variables de entorno necesarias.
+5. Inicia el servidor de desarrollo:
    ```sh
    npm run dev
    ```
 
-## Usage
+## Uso
 
-To start the application, run:
+Para iniciar la aplicación, ejecuta:
 ```sh
 npm run dev
 ```
 
-Open your browser and navigate to `http://localhost:3000` to view the application.
+Abre tu navegador y navega a `http://localhost:3000` para ver la aplicación.
 
----
 
-You can further customize this README based on specific details or additional information about your project.
+
