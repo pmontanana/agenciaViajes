@@ -9,7 +9,8 @@ import {
     paginaTestimonios,
     guardarTestimonios,
     paginaDetalleViajes,
-    autenticarUsuario
+    autenticarUsuario,
+    cerrarSesion
 } from "../controllers/paginaController.js";
 
 const router = express.Router();
@@ -24,5 +25,6 @@ router.get("/login", login);
 router.post("/login", autenticarUsuario);
 router.get("/registro", paginaRegistro);
 router.post("/registro", crearCuenta);
+router.get("/cerrar-sesion", cerrarSesion);
 
 export default router;

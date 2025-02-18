@@ -85,19 +85,19 @@ header .nav a {
     font-family: 'Staatliches', cursive;
     font-size: 2rem;
     color: white;
-    
 }
-header span.nav-link{
+
+header span.nav-link {
     font-family: 'Staatliches', cursive;
     font-size: 2rem;
     color: white;
 }
+
 header .nav a:hover, footer .nav a:hover {
     background-color: #DC135F;
     border-radius: 20cm;
     transition: background-color 0.5s ease;
     transition: border-radius 5s ease;
-
 }
 footer .nav a,
 .copyright {

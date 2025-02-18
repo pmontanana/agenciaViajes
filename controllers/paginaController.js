@@ -199,6 +199,15 @@ const autenticarUsuario = async (req, res) => {
         });
     }
 };
+const cerrarSesion = (req, res) => {
+    req.session.destroy((err) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.redirect('/');
+        }
+    });
+};
 
 export {
     paginaInicio,
@@ -210,5 +219,6 @@ export {
     login,
     paginaRegistro,
     crearCuenta,
-    autenticarUsuario
+    autenticarUsuario,
+    cerrarSesion
 };

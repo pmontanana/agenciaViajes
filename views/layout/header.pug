@@ -12,6 +12,8 @@ header
                         a.nav-link(href="/testimonios") Testimonios
                         if usuario
                             span.nav-link Bienvenido #{usuario.nombre}
+                            a.nav-link(href="/cerrar-sesion") Cerrar Sesión
+
                         else
                             a.nav-link(href="/login") Login
                             a.nav-link(href="/registro") Registro

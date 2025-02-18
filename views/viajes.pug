@@ -43,4 +43,9 @@ block contenido
                                 |   #{viaje.disponibles} Disponibles
 
                             p=viaje.descripcion.substring(0,100)+'...'
-                            a.btn.btn-primary(href=`/viajes/${viaje.slug}`) Ver más
+
+                            if usuario
+                                a.btn.btn-primary(href=`/viajes/${viaje.slug}`) Ver más
+                            else 
+                                a.btn.btn-primary(href="/login") Inicia sesión para ver más
+                            
