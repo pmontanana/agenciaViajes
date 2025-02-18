@@ -25,4 +25,23 @@ block contenido
                             p.titulo Viaje a Canadá
                             p.fecha 20 de Marzo de 2025 - 29 de Marzo de 2025
                             p.precio 2.500 €
+                            
     h2.mt-5.text-center TESTIMONIOS
+        blockquote.text-center.mb-5
+            p
+                | Lee sobre nuestros clientes y sus experiencias
+
+        .row.testimonios
+            each testimonio in testimonios
+                .col-md-6.col-lg-4.mb-4
+                    .card.shadow-lg.border-light
+                        .card-body
+                            blockquote.blockquote
+                                p.mb-0.text-center
+                                    | "#{testimonio.mensaje}"
+                            footer.blockquote-footer.text-right
+                                | — #{testimonio.nombre}
+
+        
+
+            

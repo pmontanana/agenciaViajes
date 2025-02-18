@@ -1,13 +1,21 @@
 import {Viaje} from "../models/viaje.js";
 import {Testimonial} from "../models/testimoniales.js";
+import {Usuarios} from "../models/usuarios.js";
 import moment from 'moment';
 
 
 const paginaInicio = async (req, res) => {
+    const testimonios = await Testimonial.findAll({
+        limit: 6,
+        order: [["Id", "DESC"]],
+    });
     res.render('inicio', {
         titulo: 'Inicio',
         clase: 'home',
+        testimonios: testimonios,
+        moment: moment,
     });
+    
 }
 
 const paginaNosotros = (req, res) => {
@@ -96,6 +104,30 @@ const paginaDetalleViajes = async (req, res) => {
     }
 };
 
+const login = (req, res) => {
+    const titulo = 'Iniciar Sesión';
+    res.render('login', {
+        titulo,
+    });
+};
+
+const paginaRegistro = (req, res) => {
+    res.render('registro', {
+        titulo: 'Crear Cuenta',
+    });
+};
+
+const crearCuenta = async (req, res) => {
+    const {email, password} = req.body;
+    try{
+        await Usuarios.create({email, password});
+        res.redirect('/login');
+    }catch(err){
+        console.log(err);
+    }
+};
+
+
 export {
     paginaInicio,
     paginaNosotros,
@@ -103,4 +135,7 @@ export {
     paginaTestimonios,
     guardarTestimonios,
     paginaDetalleViajes,
+    login,
+    paginaRegistro,
+    crearCuenta,
 }
