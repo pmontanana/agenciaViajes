@@ -3,11 +3,17 @@ import router from './routers/index.js';
 import session from 'express-session';
 import db from './config/db.js';
 import dotenv from 'dotenv';
+import favicon from 'serve-favicon';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 dotenv.config();
 const app = express();
-
 const port = process.env.PORT || 3000;
+
+// Obtener __dirname en módulos ES
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 //Conectar a la BBDD
 db.authenticate()
@@ -25,6 +31,8 @@ app.use(session({
     saveUninitialized: true,
     cookie: { secure: false } 
 }));
+
+app.use(favicon(path.join(__dirname, 'public', 'img', 'favicon.ico')));
 
 app.use((req,res,next) => {
     const year = new Date().getFullYear();
