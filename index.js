@@ -1,5 +1,6 @@
 import express, {json} from 'express';
 import router from './routers/index.js';
+import session from 'express-session';
 import db from './config/db.js';
 import dotenv from 'dotenv';
 
@@ -17,6 +18,13 @@ app.listen(port, () => console.log(`Escuchando en el puerto ${port}`));
 
 //Habilitar pug
 app.set('view engine', 'pug');
+
+app.use(session({
+    secret: 'tu_secreto',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false } 
+}));
 
 app.use((req,res,next) => {
     const year = new Date().getFullYear();
