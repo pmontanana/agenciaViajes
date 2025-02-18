@@ -2,6 +2,8 @@
 
 Agencia de Viajes es una aplicación web para gestionar reservas de viajes y servicios relacionados.
 
+![logo](public/img/logo.png)
+
 ## Estructura del Proyecto
 
 - `.env.example`: Archivo de configuración de entorno de ejemplo.
