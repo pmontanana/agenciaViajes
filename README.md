@@ -1,8 +1,14 @@
-# Agencia de Viajes
+
+# <img src="public/img/logo.png" alt="logo" width="50"/> Agencia de Viajes
 
 Agencia de Viajes es una aplicación web para gestionar reservas de viajes y servicios relacionados.
 
-![logo](public/img/logo.png)
+![Static Badge](https://img.shields.io/badge/Node_version-22.11.0-darkgreen)
+![Static Badge](https://img.shields.io/badge/npm_version-10.9.0-darkgreen)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/pmontanana/agenciaViajes)
+![Static Badge](https://img.shields.io/badge/Versi%C3%B3n-1.0-aquamarine)
+
+
 
 ## Estructura del Proyecto
 
@@ -63,3 +69,5 @@ npm run dev
 ```
 
 Abre tu navegador y navega a `http://localhost:3000` para ver la aplicación.
+
+
