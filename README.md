@@ -6,7 +6,6 @@ Agencia de Viajes es una aplicación web para gestionar reservas de viajes y ser
 
 - `.env.example`: Archivo de configuración de entorno de ejemplo.
 - `.gitignore`: Especifica los archivos que deben ser ignorados por Git.
-- `.idea/`: Directorio para configuraciones del proyecto de IntelliJ IDEA.
 - `config/`: Archivos de configuración.
 - `controllers/`: Controladores de la aplicación.
 - `index.js`: Punto de entrada principal de la aplicación.
@@ -19,12 +18,16 @@ Agencia de Viajes es una aplicación web para gestionar reservas de viajes y ser
 
 ## Dependencias
 
+- `bcrypt`: ^5.1.1
+- `connect`: ^3.7.0
 - `dotenv`: ^16.4.7
 - `express`: ^4.21.2
+- `express-session`: ^1.18.1
 - `moment`: ^2.30.1
 - `mysql2`: ^3.12.0
 - `pug`: ^3.0.3
 - `sequelize`: ^6.37.5
+- `serve-favicon`: ^2.5.0
 
 ## Dependencias de Desarrollo
 
